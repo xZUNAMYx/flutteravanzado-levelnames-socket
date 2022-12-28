@@ -70,7 +70,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   addNewLevel() {
-    final textController = new TextEditingController();
+    final textController = TextEditingController();
 
     if (Platform.isAndroid) {
       showDialog(
