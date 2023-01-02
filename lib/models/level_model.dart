@@ -12,9 +12,9 @@ class Level {
   //Para retornar una nueva instancia de Level
   factory Level.fromMap(Map<String, dynamic> obj) {
     return Level(
-      id: obj['id'],
-      name: obj['name'],
-      quantity: obj['quantity'],
+      id: obj.containsKey('id') ? obj['id'] : 'no-id',
+      name: obj.containsKey('name') ? obj['name'] : 'no-name',
+      quantity: obj.containsKey('quantity') ? obj['quantity'] : 'no-quantity',
     );
   }
 }
